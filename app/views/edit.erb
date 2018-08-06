@@ -5,7 +5,11 @@
     <title>Edit Post</title>
   </head>
   <body>
-    <h1>To edit a post, please enter the below information:</h1>
+    <h1>Existing post information:</h1>
+    <p><%=@post.name%></p>
+    <p><%=@post.content%></p>
+    
+    <h2>To edit this post, please enter the below information:</h1>
     <form action="/posts/<%=@post.id%>" method="post">
       <input id="hidden" type="hidden" name="_method" value="patch">
       <p>New Name: <input type="text" name="name"></p>
