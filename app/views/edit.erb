@@ -7,7 +7,8 @@
   <body>
     <h1>To edit a post, please enter the below information:</h1>
     <form action="/posts/<%=posts.id%>" method="post">
-
+      <input id="hidden" type="hidden" name="_method" value="patch">
+      <p>Post Name: <input type="text" name="name"></p>
     </form>
   </body>
 </html>
