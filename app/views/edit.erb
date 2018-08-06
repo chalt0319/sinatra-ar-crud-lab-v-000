@@ -8,7 +8,7 @@
     <h1>Existing post information:</h1>
     <p><%=@post.name%></p>
     <p><%=@post.content%></p>
-    
+
     <h2>To edit this post, please enter the below information:</h1>
     <form action="/posts/<%=@post.id%>" method="post">
       <input id="hidden" type="hidden" name="_method" value="patch">
