@@ -29,9 +29,9 @@ class ApplicationController < Sinatra::Base
     erb :show
   end
 
-  get '/posts/:id/edit' do 
+  get '/posts/:id/edit' do
 
-  end 
+  end
 
-  
+
 end
