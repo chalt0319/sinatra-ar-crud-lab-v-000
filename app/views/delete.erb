@@ -6,6 +6,9 @@
   </head>
   <body>
     <h2>Your post has been deleted successfully.</h2>
-    <p><%= Post.all %></p>
+    <% Post.all.each do |post| %>
+    <h1>Post Name: <%=post.name%></h1>
+    <p>Post Content: <%=post.content%></p>
+    <% end %>
   </body>
 </html>
