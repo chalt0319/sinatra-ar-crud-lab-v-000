@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>To edit a post, please enter the below information:</h1>
-    <form action="/posts/<%=posts.id%>" method="post">
+    <form action="/posts/<%=@post.id%>" method="post">
       <input id="hidden" type="hidden" name="_method" value="patch">
       <p>Post Name: <input type="text" name="name"></p>
       <p>New Content: <input type="text" name="content"></p>
